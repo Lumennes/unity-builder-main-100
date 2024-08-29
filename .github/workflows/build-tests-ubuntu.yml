@@ -62,7 +62,7 @@ jobs:
           - true
         additionalParameters:
           - -param value
-          - -standaloneBuildSubtarget Server
+          # - -standaloneBuildSubtarget Server
         # Skipping configurations that are not supported
         exclude:
           # No il2cpp support on Linux Host
