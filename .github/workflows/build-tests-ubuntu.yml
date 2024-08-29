@@ -196,9 +196,9 @@ jobs:
           # path: build
           # retention-days: 14
 
-       - uses: Difegue/action-megacmd@master
+      - uses: Difegue/action-megacmd@master
         with:
-          args: put -c build /GameCIBuild/${{ matrix.unityVersion }}/ 
+          args: put -c build /GameCITestBuild/${{ matrix.unityVersion }}/ 
         env:
           USERNAME: ${{ secrets.MEGA_USERNAME }}
           PASSWORD: ${{ secrets.MEGA_PASSWORD }}
